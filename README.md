@@ -1,7 +1,11 @@
 # Event management and registration - Content Elements
 
 This TYPO3 extension extends [sf_event_mgt](https://github.com/derhansen/sf_event_mgt) to support content element
-relations in event records. 
+relations in event records. When installed, it is possible to assign various content elements to event records as 
+shown on the screenshot below.
+
+![Content element relation](/Documentation/Images/content-element-relation.png)
+
 
 ## Installation
 
