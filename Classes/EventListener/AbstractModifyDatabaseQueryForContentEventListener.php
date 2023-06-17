@@ -1,6 +1,6 @@
 <?php
 
-namespace Derhansen\SfEventMgtContentelements\Hooks\Backend;
+declare(strict_types=1);
 
 /*
  * This file is part of the Extension "sf_event_mgt_contentelements" for TYPO3 CMS.
@@ -9,12 +9,15 @@ namespace Derhansen\SfEventMgtContentelements\Hooks\Backend;
  * LICENSE.txt file that was distributed with this source code.
  */
 
+namespace Derhansen\SfEventMgtContentelements\EventListener;
+
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
+use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-abstract class AbstractBackendQueryHook
+abstract class AbstractModifyDatabaseQueryForContentEventListener
 {
     public const LLL = 'LLL:EXT:sf_event_mgt_contentelements/Resources/Private/Language/locallang_be.xlf:';
 
@@ -24,7 +27,7 @@ abstract class AbstractBackendQueryHook
             FlashMessage::class,
             $this->getLanguageService()->sL(self::LLL . $messageKey),
             '',
-            FlashMessage::INFO
+            ContextualFeedbackSeverity::INFO
         );
         $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
         $defaultFlashMessageQueue = $flashMessageService->getMessageQueueByIdentifier();

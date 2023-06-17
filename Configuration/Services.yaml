@@ -6,3 +6,13 @@ services:
 
   Derhansen\SfEventMgtContentelements\:
     resource: '../Classes/*'
+
+  Derhansen\SfEventMgtContentelements\EventListener\ModifyDatabaseQueryForContentInPageModuleEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'sf-event-mgt-contentelements/modify-database-query-for-page-module-content'
+
+  Derhansen\SfEventMgtContentelements\EventListener\ModifyDatabaseQueryForContentInListModuleEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'sf-event-mgt-contentelements/modify-database-query-for-list-module-content'
