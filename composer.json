@@ -1,0 +1,53 @@
+{
+  "name": "derhansen/sf-event-mgt-contentelements",
+  "type": "typo3-cms-extension",
+  "description": "Adds a relation field for content elements to events",
+  "homepage": "https://github.com/derhansen/sf_event_mgt_contentelements",
+  "support": {
+    "issues": "https://github.com/derhansen/sf_event_mgt_contentelements/issues"
+  },
+  "authors": [
+    {
+      "name": "Torben Hansen",
+      "email": "derhansen@gmail.com",
+      "homepage": "https://www.derhansen.com",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "TYPO3 CMS",
+    "event management",
+    "content elements"
+  ],
+  "require": {
+    "typo3/cms-core": "^11.5",
+    "derhansen/sf_event_mgt": "^6.4.1"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.0"
+  },
+  "replace": {
+    "typo3-ter/sf_event_mgt_contentelements": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "Derhansen\\SfEventMgtContentelements\\": "Classes"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "sf_event_mgt_contentelements",
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "app-dir": ".Build",
+      "web-dir": ".Build/public"
+    }
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin",
+    "allow-plugins": {
+      "typo3/cms-composer-installers": true,
+      "typo3/class-alias-loader": true
+    }
+  }
+}
