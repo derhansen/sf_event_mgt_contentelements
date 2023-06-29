@@ -10,5 +10,5 @@ CREATE TABLE tx_sfeventmgt_domain_model_event (
 #
 CREATE TABLE tt_content (
 	tx_sfeventmgt_related_event int(11) DEFAULT '0' NOT NULL,
-	KEY index_eventcontent (tx_sfeventmgt_related_events)
+	KEY index_eventcontent (tx_sfeventmgt_related_event)
 );
