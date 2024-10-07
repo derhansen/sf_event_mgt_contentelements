@@ -22,7 +22,6 @@ $fields = [
                 'levelLinksPosition' => 'bottom',
                 'useSortable' => true,
                 'showPossibleLocalizationRecords' => true,
-                'showRemovedLocalizationRecords' => true,
                 'showAllLocalizationLink' => true,
                 'showSynchronizationLink' => true,
                 'enabledControls' => [
