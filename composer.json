@@ -20,11 +20,8 @@
     "content elements"
   ],
   "require": {
-    "typo3/cms-core": "^12.4",
-    "derhansen/sf_event_mgt": "^7.1.0"
-  },
-  "require-dev": {
-    "friendsofphp/php-cs-fixer": "^3.0"
+    "typo3/cms-core": "^13.4",
+    "derhansen/sf_event_mgt": "^8.0.0"
   },
   "replace": {
     "typo3-ter/sf_event_mgt_contentelements": "self.version"
@@ -36,18 +33,7 @@
   },
   "extra": {
     "typo3/cms": {
-      "extension-key": "sf_event_mgt_contentelements",
-      "cms-package-dir": "{$vendor-dir}/typo3/cms",
-      "app-dir": ".Build",
-      "web-dir": ".Build/public"
-    }
-  },
-  "config": {
-    "vendor-dir": ".Build/vendor",
-    "bin-dir": ".Build/bin",
-    "allow-plugins": {
-      "typo3/cms-composer-installers": true,
-      "typo3/class-alias-loader": true
+      "extension-key": "sf_event_mgt_contentelements"
     }
   }
 }

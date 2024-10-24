@@ -1,5 +1,7 @@
 .idea/
 .DS_Store
-.Build/
+.Build/public
+.Build/vendor
+.Build/var/
 composer.lock
 .php-cs-fixer.cache

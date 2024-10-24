@@ -41,6 +41,14 @@ to set "Contains Plugin" to "Events" for the folder(s) containing event records.
 
 This setting will hide related content elements in the list and page module. 
 
+## Versions
+
+| Version | TYPO3 | PHP       | Support/Development                  |
+|---------|-------|-----------|--------------------------------------|
+| 3.x     | 13.4  | 8.1 - 8.3 | Features, Bugfixes, Security Updates |
+| 2.x     | 12.4  | 8.1 - 8.3 | Features, Bugfixes, Security Updates |
+| 1.x     | 11.5  | 7.4 - 8-3 | Bugfixes, Security Updates           |
+
 ## Thanks for sponsoring
 
 Thanks a lot to [MENNEKES Elektrotechnik GmbH & Co. KG](https://www.MENNEKES.de) for sponsoring the initial development 
