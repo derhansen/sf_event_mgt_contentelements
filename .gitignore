@@ -1,5 +1,6 @@
 .idea/
 .DS_Store
+.Build/bin
 .Build/public
 .Build/vendor
 .Build/var/
