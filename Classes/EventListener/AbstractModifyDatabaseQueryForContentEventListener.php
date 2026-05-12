@@ -25,7 +25,7 @@ abstract class AbstractModifyDatabaseQueryForContentEventListener
     {
         $message = GeneralUtility::makeInstance(
             FlashMessage::class,
-            $this->getLanguageService()->sL(self::LLL . $messageKey),
+            (string)$this->getLanguageService()->translate($messageKey, 'sf_event_mgt_contentelements.be'),
             '',
             ContextualFeedbackSeverity::INFO
         );

@@ -23,8 +23,8 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^13.4",
-    "derhansen/sf_event_mgt": "^8.0.0"
+    "typo3/cms-core": "^14.3",
+    "derhansen/sf_event_mgt": "^9.0.0"
   },
   "replace": {
     "typo3-ter/sf_event_mgt_contentelements": "self.version"
@@ -36,7 +36,11 @@
   },
   "extra": {
     "typo3/cms": {
-      "extension-key": "sf_event_mgt_contentelements"
+      "extension-key": "sf_event_mgt_contentelements",
+      "version": "4.0.0",
+      "Package": {
+        "providesPackages": []
+      }
     }
   }
 }

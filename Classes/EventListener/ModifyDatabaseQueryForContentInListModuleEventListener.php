@@ -13,6 +13,7 @@ namespace Derhansen\SfEventMgtContentelements\EventListener;
 
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\Event\ModifyDatabaseQueryForRecordListingEvent;
+use TYPO3\CMS\Core\Attribute\AsEventListener;
 
 /**
  * Event listener to hide tt_content elements in list view
@@ -21,6 +22,7 @@ class ModifyDatabaseQueryForContentInListModuleEventListener extends AbstractMod
 {
     protected static int $count = 0;
 
+    #[AsEventListener('sf-event-mgt-contentelements/modify-database-query-for-list-module-content')]
     public function __invoke(ModifyDatabaseQueryForRecordListingEvent $event): void
     {
         if ($event->getTable() === 'tt_content' && $event->getPageId() > 0) {

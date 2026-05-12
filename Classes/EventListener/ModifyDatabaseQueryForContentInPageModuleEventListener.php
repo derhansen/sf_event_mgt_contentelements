@@ -13,6 +13,7 @@ namespace Derhansen\SfEventMgtContentelements\EventListener;
 
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\Event\ModifyDatabaseQueryForContentEvent;
+use TYPO3\CMS\Core\Attribute\AsEventListener;
 use TYPO3\CMS\Core\Database\Connection;
 
 /**
@@ -22,6 +23,7 @@ class ModifyDatabaseQueryForContentInPageModuleEventListener extends AbstractMod
 {
     protected static int $count = 0;
 
+    #[AsEventListener('sf-event-mgt-contentelements/modify-database-query-for-page-module-content')]
     public function __invoke(ModifyDatabaseQueryForContentEvent $event): void
     {
         if ($event->getTable() === 'tt_content' && $event->getPageId() > 0) {
